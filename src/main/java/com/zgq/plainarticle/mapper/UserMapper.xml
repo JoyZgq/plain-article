@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zgq.plainarticle.dao.UserDao">
+
+    <select id="findUserByName" parameterType="String" resultType="com.zgq.plainarticle.bean.User">
+        SELECT * FROM user WHERE user_name = #{name}
+    </select>
+</mapper>
