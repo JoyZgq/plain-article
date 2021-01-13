@@ -1,0 +1,6 @@
+logbook:
+  exclude:
+    - /favicon.ico
+  write:
+    category: http-log
+    level: info

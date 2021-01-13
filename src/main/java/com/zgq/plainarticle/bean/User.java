@@ -11,12 +11,11 @@ import lombok.NoArgsConstructor;
 public class User {
 
     private int userId;
-    @NotNull(message = "classId 不能为空")
+    @NotNull
     private String userName;
     private String userPassword;
     private int userStatus;
     private int userLevel;
-    @Email(message = "email 格式不正确")
     private String userEmail;
 
 }
